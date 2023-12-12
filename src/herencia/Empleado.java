@@ -7,6 +7,9 @@ public class Empleado extends Persona {
     String cargo;
     Double sueldo;
 
+    public Empleado() {
+    }
+    
     public Empleado(int num_legajo, String cargo, Double sueldo, int id, 
             String dni, String nombre, String apellido, String domicilio, 
             String telefono) {
@@ -14,10 +17,6 @@ public class Empleado extends Persona {
         this.num_legajo = num_legajo;
         this.cargo = cargo;
         this.sueldo = sueldo;
-    }
-
-    Empleado() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     public int getNum_legajo() {
@@ -43,6 +42,5 @@ public class Empleado extends Persona {
     public void setSueldo(Double sueldo) {
         this.sueldo = sueldo;
     }
-    
     
 }
